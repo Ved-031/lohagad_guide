@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <title>शिलेदार - लोहगड किल्ला</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #c9b198, #f5e9dc);
+    }
+
+    header {
+      background-color: #6a3e1a;
+      padding: 15px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #8b4513;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-box {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4a2c00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>शिलेदार</h1>
+    <nav>
+      <a href="index.html">मुखपृष्ठ</a>
+      <a href="#feedback">अभिप्राय</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+
+
+    <!-- Feedback Section -->
+    <form id="feedbackForm">
+      <input type="text" name="name" placeholder="नाव" required><br>
+      <input type="email" name="email" placeholder="ई-मेल" required><br>
+      <textarea name="message" placeholder="अभिप्राय" required></textarea><br>
+      <button type="submit">पाठवा</button>
+    </form>
+
+    <script>
+      document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+    
+        const data = {
+          name: this.name.value,
+          email: this.email.value,
+          message: this.message.value
+        };
+        
+        fetch("http://localhost:3000/submit-feedback", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        })
+        .then(res => res.text())
+        .then(msg => alert(msg))
+        .catch(err => alert("Error: " + err));
+      });
+    </script>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+      <h2>संपर्क साधा</h2>
+      <div class="contact-box">
+        <p><strong>पत्ता:</strong> लोहगड किल्ला, मावळ तालुका, पुणे जिल्हा, महाराष्ट्र</p>
+        <p><strong>फोन:</strong> +91-9876543210</p>
+        <p><strong>ई-मेल:</strong> info@lohgadfort.in</p>
+        <p><strong>सोशल मीडिया:</strong> 
+          <a href="#">Instagram</a> | 
+          <a href="#">Facebook</a> | 
+          <a href="#">Twitter</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
