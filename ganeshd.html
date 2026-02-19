@@ -1,161 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f4f1ea;
-        }
 
-        .history {
-            padding: 50px 20px;
-            background: #fff8e1;
-            border: 2px solid #e0c097;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            max-width: 1500px;
-            margin: 0 auto;
-            position: relative;
-        }
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>गणेश दरवाजा - शिलेदार</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">शिलेदार</div>
+        <ul class="nav-links">
+          <li><a href="index.html">मुखपृष्ठ</a></li>
+          <li><a href="index.html#locations">वास्तू</a></li>
+          <li><a href="index.html#gallery">छायाचित्रे</a></li>
+          <li><a href="feedback.html">संपर्क</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        .history h2 {
-            text-align: center;
-            font-size: 2.5em;
-            color: #4b2e2e;
-            margin-bottom: 30px;
-            text-shadow: 3px 3px #e6d4c3;
-            font-family: 'Times New Roman', serif;
-        }
-
-        .audio-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 400px;
-            outline: none;
-            border-radius: 10px;
-            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .image-gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-            padding: 10px;
-        }
-
-        .image-gallery img {
-            width: 500px;
-            height: 300px;
-            border-radius: 12px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            object-fit: cover;
-        }
-
-        .image-gallery img:hover {
-            transform: scale(1.1);
-            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .timeline {
-            position: relative;
-            padding: 20px 40px;
-            border-left: 3px solid #8a4a3b;
-            margin-top: 30px;
-        }
-
-        .timeline div {
-            position: relative;
-            padding: 10px 20px;
-            margin-bottom: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 4px solid #8a4a3b;
-            font-size: 1.1em;
-            color: #4b2e2e;
-            line-height: 1.6;
-            font-family: 'Georgia', serif;
-            text-align: justify;
-        }
-
-        .timeline div::before {
-            content: '⦿';
-            position: absolute;
-            left: -35px;
-            top: 5px;
-            color: #8a4a3b;
-            font-size: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .image-gallery img {
-                width: 200px;
-                height: 150px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<section id="history" class="history">
-    <h2> लोहगड </h2>
-
-    <div class="audio-container">
-        <audio controls>
-            <source src="audio/ganeshdarvaja.mp3" type="audio/mpeg">
+    <main>
+      <section class="history">
+        <h2>गणेश दरवाजा</h2>
+        <div class="audio-container">
+          <audio controls>
+            <source src="audio/ganeshdarvaja.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="image-gallery">
-        <img src="images/ganeshdarvaja.png" alt="Fort View 1">
-        <img src="images/ganeshdarvaja2.png" alt="Fort View 2">
-        <img src="images/shilalekh.png" alt="Fort View 3">
-    </div>
-
-    <div class="timeline">
-        <div>या दरवाजाच्या दोन्ही बाजूला गणपतीचे कोरीव शिल्प आहे. हा गणेश दरवाजा गोमुखी आकारामध्ये बांधलेला आहे. त्यामुळे दरवाजांवर एकाचवेळी वार करणे अवघड आहे. 
-            लाकडाचे ओंडके, हत्ती किंवा तोफ गोळ्याच्या सहाय्याने वार करून दरवाजा किंवा बुरुज पाडणे अवघड आहे. <br>
-            खालच्या वळणाला तटबंदीची रचना ही एकावेळी एकच सैनिक प्रवेश करू शकेल अशी आहे.  त्यामुळे अफाट सैन्याला सहजतेने रोखता येते. 
-            आतमध्ये एक शिलालेख आढळतो. त्यावर नाना फडणीस यांनी केलेल्या कामांचा उल्लेख आढळतो.
-
-        </div><br>
-         <div>
-             खालच्या वळणाला तटबंदीची रचना ही एकावेळी एकच सैनिक शस्त्र  प्रवेश करू शकेल अशी आहे त्यामुळे अफाट सैन्याला सहजतेने रोखता येते. 
-         </div><br>
-         <div>
-            आतमद्धे एक शिलालेख आढळतो. त्यामद्धे नाना फडणवीस यांनी केलेल्या कामांचा उलेख आढळतो.
-             <br>जसे की :- <br>गणेश.. दरवाजा <br>
-                        .जी जणार्धन फडणवीस विद्यमान .. <br>
-                        . बलहाळ निजसुरे प्रारंभ शेक 171.(2 )<br>
-                        सदारण नाम सतवासरे आश्विन शू <br>
-                        ध 9 नवमी रविवार समपते शके <br>
-                        1716 आंदणं सतवासारे <br>
-                        जेसठ सुध त्रयोदशी बु <br>
-                        धावर स्तव्या जायजि <br>
-                        धना. राम गावडी त्रिव <br>
-                        कजी सुतार 
-
-
-         </div><br>  
-         <div>  
-           
-या बुरुजाचे बांधकाम आधुनिक इंटरलॉकिंग पद्धतीने केलेले आहे. ज्यामध्ये दोन दगडांमध्ये खाच करून त्यांना एकमेकांमध्ये घट्ट बसवले जाते .
-या बांधणीला अजुन मजबूती प्रदान करण्यासाठी चुना , शिसे , गूळ डाळींचे पिठ यांच्या एकत्रित मिश्रणाचा वापर केला जातो 
-         </div><br>  
-         
-             
+          </audio>
         </div>
-</section>
 
-</body>
+        <!-- IMAGE GALLERY -->
+        <div class="gallery-grid" style="margin-top: 40px">
+          <img src="images/ganeshdarvaja.png" alt="गणेश दरवाजा" />
+          <img src="images/ganeshdarvaja2.png" alt="गणेश दरवाजा दुसरे दृश्य" />
+          <img src="images/shilalekh.png" alt="शिलालेख" />
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="timeline" style="margin-top: 50px">
+          <p>
+            या दरवाजाच्या दोन्ही बाजूला गणपतीचे कोरीव शिल्प आहे. हा गणेश दरवाजा
+            गोमुखी आकारामध्ये बांधलेला आहे. त्यामुळे दरवाजांवर एकाचवेळी वार करणे
+            अवघड आहे. लाकडाचे ओंडके, हत्ती किंवा तोफ गोळ्याच्या सहाय्याने वार
+            करून दरवाजा किंवा बुरुज पाडणे अवघड आहे. खालच्या वळणाला तटबंदीची रचना
+            ही एकावेळी एकच सैनिक प्रवेश करू शकेल अशी आहे. त्यामुळे अफाट सैन्याला
+            सहजतेने रोखता येते. आतमध्ये एक शिलालेख आढळतो. त्यावर नाना फडणीस
+            यांनी केलेल्या कामांचा उल्लेख आढळतो.
+          </p>
+
+          <p>
+            खालच्या वळणाला तटबंदीची रचना ही एकावेळी एकच सैनिक शस्त्र प्रवेश करू
+            शकेल अशी आहे त्यामुळे अफाट सैन्याला सहजतेने रोखता येते.
+          </p>
+
+          <p>
+            आतमद्धे एक शिलालेख आढळतो. त्यामद्धे नाना फडणवीस यांनी केलेल्या
+            कामांचा उलेख आढळतो.
+            <br /><br />
+            जसे की :-
+            <br />
+            गणेश.. दरवाजा
+            <br />
+            .जी जणार्धन फडणवीस विद्यमान ..
+            <br />
+            . बलहाळ निजसुरे प्रारंभ शेक 171.(2 )
+            <br />
+            सदारण नाम सतवासरे आश्विन शू
+            <br />
+            ध 9 नवमी रविवार समपते शके
+            <br />
+            1716 आंदणं सतवासारे
+            <br />
+            जेसठ सुध त्रयोदशी बु
+            <br />
+            धावर स्तव्या जायजि
+            <br />
+            धना. राम गावडी त्रिव
+            <br />
+            कजी सुतार
+          </p>
+
+          <p>
+            या बुरुजाचे बांधकाम आधुनिक इंटरलॉकिंग पद्धतीने केलेले आहे. ज्यामध्ये
+            दोन दगडांमध्ये खाच करून त्यांना एकमेकांमध्ये घट्ट बसवले जाते. या
+            बांधणीला अजुन मजबूती प्रदान करण्यासाठी चुना, शिसे, गूळ डाळींचे पिठ
+            यांच्या एकत्रित मिश्रणाचा वापर केला जातो.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Historical Fort Guide. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

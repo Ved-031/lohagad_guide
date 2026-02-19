@@ -1,169 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f4f1ea;
-        }
 
-        .history {
-            padding: 50px 20px;
-            background: #fff8e1;
-            border: 2px solid #e0c097;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>गडाचा इतिहास - शिलेदार</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">शिलेदार</div>
+        <ul class="nav-links">
+          <li><a href="index.html">मुखपृष्ठ</a></li>
+          <li><a href="index.html#locations">वास्तू</a></li>
+          <li><a href="index.html#gallery">छायाचित्रे</a></li>
+          <li><a href="feedback.html">संपर्क</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        .history h2 {
-            text-align: center;
-            font-size: 2.5em;
-            color: #4b2e2e;
-            margin-bottom: 30px;
-            text-shadow: 3px 3px #e6d4c3;
-            font-family: 'Times New Roman', serif;
-        }
-
-        /* Styling the audio player */
-        .audio-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 400px;
-            outline: none;
-            border-radius: 10px;
-            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .timeline {
-            position: relative;
-            padding: 20px 40px;
-            border-left: 3px solid #8a4a3b;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: -10px;
-            top: 0;
-            bottom: 0;
-            width: 20px;
-            background: linear-gradient(180deg, #e7cba9, #d4b484);
-            border-radius: 50%;
-        }
-
-        .timeline div,
-        .timeline p {
-            position: relative;
-            padding: 10px 20px;
-            margin-bottom: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 4px solid #8a4a3b;
-        }
-
-        .timeline div::before,
-        .timeline p::before {
-            content: '⦿';
-            position: absolute;
-            left: -35px;
-            top: 5px;
-            color: #8a4a3b;
-            font-size: 20px;
-        }
-
-        .timeline div:hover,
-        .timeline p:hover {
-            background: #f9f3e7;
-            transform: scale(1.02);
-            transition: all 0.3s ease;
-        }
-
-        .timeline div:last-child,
-        .timeline p:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline div {
-            font-size: 1.1em;
-            color: #4b2e2e;
-            line-height: 1.6;
-            font-family: 'Georgia', serif;
-            text-align: justify;
-        }
-
-        .timeline p {
-            font-size: 1.2em;
-            color: #4b2e2e;
-            line-height: 1.6;
-            font-weight: bold;
-            font-family: 'Georgia', serif;
-        }
-
-        @media (max-width: 768px) {
-            .timeline {
-                padding: 20px;
-                border-left: 2px solid #8a4a3b;
-            }
-
-            .timeline div,
-            .timeline p {
-                padding: 10px;
-            }
-
-            audio {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<section id="history" class="history">
-    <h2>Fort History</h2>
-
-    <!-- Styled Audio Player -->
-    <div class="audio-container">
-        <audio controls>
-          
-            <source src="audio/history.mp3" type="audio/mpeg">
-            
-
+    <main>
+      <section id="history" class="history">
+        <h2>गडाचा इतिहास</h2>
+        <div class="audio-container">
+          <audio controls>
+            <source src="audio/history.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
-        </audio>
-    </div>
+          </audio>
+        </div>
 
-    <div class="timeline">
-        <p> इ.स.पू. 2000 पूर्वी बांधला गेला: लोहगड गड अतिशय मजबूत आणि भव्य आहे. 
-            भाजे आणि बेडसे लेणी निर्माण झाल्या त्याही पूर्वी, म्हणजेच इ.स.पू. 2000 वर्षांपूर्वी या किल्ल्याची निर्मिती झाली असावी असे अनुमान आहे.<br>
-        </p><br>
-        <div>
-            निजामशाही आणि आदिलशाही: इ.स. 1489 मध्ये मलिक अहमदने निजामशाहीची स्थापना केली आणि अनेक किल्ले जिंकून घेतले,
-            त्यापैकी लोहगड हा एक गड होता. इ.स. 1630 मध्ये हा किल्ला आदिलशाहीत आला.
-        </div><br>
-        <div>
-            मराठा साम्राज्य: 1657 मध्ये शिवाजी महाराजांनी कल्याण आणि भिवंडी परिसर जिंकून घेतला आणि लोहगड–विसापूर हा सर्व परिसर स्वराज्यात सामील करून घेतला.
-        </div><br>  
-        <div>
-            पुरंदरचा तह: इ.स. 1665 मध्ये झालेल्या पुरंदरच्या तहात हा गड मुघलांच्या स्वाधीन केला गेला. पण 13 मे 1670 मध्ये मराठ्यांनी गड परत जिंकला.
-        </div><br>
-        <div>
-            पेशवाई: 1713 मध्ये शाहूमहाराजांनी कान्होजी आंग्रे यांना लोहगड दिला. 1720 मध्ये आंग्र्यांकडून तो पेशव्यांकडे आला. नाना फडणवीसांनी गडाचे बांधकाम आणखी मजबूत करून घेतले.
-        </div><br>
-        <div>
-            इंग्रजांचा ताबा: 1803 मध्ये इंग्रजांनी गड घेतला. पण नंतर दुसऱ्या बाजीरावाने तो पुन्हा जिंकला. 4 मार्च 1818 ला जनरल प्रॉथरने लोहगड जिंकला आणि मराठ्यांनी गड रिकामा केला.
-        </div><br>
-    </div>
-</section>
+        <div class="timeline">
+          <p>
+            इ.स.पू. 2000 पूर्वी बांधला गेला: लोहगड गड अतिशय मजबूत आणि भव्य आहे.
+            भाजे आणि बेडसे लेणी निर्माण झाल्या त्याही पूर्वी, म्हणजेच इ.स.पू.
+            2000 वर्षांपूर्वी या किल्ल्याची निर्मिती झाली असावी असे अनुमान आहे.
+          </p>
 
-</body>
+          <p>
+            निजामशाही आणि आदिलशाही: इ.स. 1489 मध्ये मलिक अहमदने निजामशाहीची
+            स्थापना केली आणि अनेक किल्ले जिंकून घेतले, त्यापैकी लोहगड हा एक गड
+            होता. इ.स. 1630 मध्ये हा किल्ला आदिलशाहीत आला.
+          </p>
+
+          <p>
+            मराठा साम्राज्य: 1657 मध्ये शिवाजी महाराजांनी कल्याण आणि भिवंडी
+            परिसर जिंकून घेतला आणि लोहगड–विसापूर हा सर्व परिसर स्वराज्यात सामील
+            करून घेतला.
+          </p>
+
+          <p>
+            पुरंदरचा तह: इ.स. 1665 मध्ये झालेल्या पुरंदरच्या तहात हा गड
+            मुघलांच्या स्वाधीन केला गेला. पण 13 मे 1670 मध्ये मराठ्यांनी गड परत
+            जिंकला.
+          </p>
+
+          <p>
+            पेशवाई: 1713 मध्ये शाहूमहाराजांनी कान्होजी आंग्रे यांना लोहगड दिला.
+            1720 मध्ये आंग्र्यांकडून तो पेशव्यांकडे आला. नाना फडणवीसांनी गडाचे
+            बांधकाम आणखी मजबूत करून घेतले.
+          </p>
+
+          <p>
+            इंग्रजांचा ताबा: 1803 मध्ये इंग्रजांनी गड घेतला. पण नंतर दुसऱ्या
+            बाजीरावाने तो पुन्हा जिंकला. 4 मार्च 1818 ला जनरल प्रॉथरने लोहगड
+            जिंकला आणि मराठ्यांनी गड रिकामा केला.
+          </p>
+        </div>
+        ```
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Historical Fort Guide. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
