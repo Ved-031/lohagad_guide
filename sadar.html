@@ -1,162 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f4f1ea;
-        }
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>कबर, सदर व पागा - शिलेदार</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">शिलेदार</div>
+        <ul class="nav-links">
+          <li><a href="index.html">मुखपृष्ठ</a></li>
+          <li><a href="index.html#locations">वास्तू</a></li>
+          <li><a href="index.html#gallery">छायाचित्रे</a></li>
+          <li><a href="feedback.html">संपर्क</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        .history {
-            padding: 50px 20px;
-            background: #fff8e1;
-            border: 2px solid #e0c097;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            max-width: 1500px;
-            margin: 0 auto;
-            position: relative;
-        }
+    <main>
+      <section class="history">
+        <h2>लोहगड</h2>
 
-        .history h2 {
-            text-align: center;
-            font-size: 2.5em;
-            color: #4b2e2e;
-            margin-bottom: 30px;
-            text-shadow: 3px 3px #e6d4c3;
-            font-family: 'Times New Roman', serif;
-        }
+        <!-- Audio Section -->
+        <!-- Audio Section -->
+        <div class="audio-section">
+          <div class="audio-card">
+            <h3>कबर</h3>
+            <audio controls>
+              <source src="audio/kabar.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
 
-        .audio-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+          <div class="audio-card">
+            <h3>सदर</h3>
+            <audio controls>
+              <source src="audio/sadar.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
 
-        audio {
-            width: 100%;
-            max-width: 400px;
-            outline: none;
-            border-radius: 10px;
-            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .image-gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-            padding: 10px;
-        }
-
-        .image-gallery img {
-            width: 500px;
-            height: 300px;
-            border-radius: 12px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            object-fit: cover;
-        }
-
-        .image-gallery img:hover {
-            transform: scale(1.1);
-            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .timeline {
-            position: relative;
-            padding: 20px 40px;
-            border-left: 3px solid #8a4a3b;
-            margin-top: 30px;
-        }
-
-        .timeline div {
-            position: relative;
-            padding: 10px 20px;
-            margin-bottom: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-            border-left: 4px solid #8a4a3b;
-            font-size: 1.1em;
-            color: #4b2e2e;
-            line-height: 1.6;
-            font-family: 'Georgia', serif;
-            text-align: justify;
-        }
-
-        .timeline div::before {
-            content: '⦿';
-            position: absolute;
-            left: -35px;
-            top: 5px;
-            color: #8a4a3b;
-            font-size: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .image-gallery img {
-                width: 200px;
-                height: 150px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<section id="history" class="history">
-    <h2> लोहगड </h2>
-
-    <div class="audio-container">
-        <div> कबर :-</div><br>
-        <audio controls>
-            <source src="audio/kabar.mp3" type="audio/mpeg">
-           
-            Your browser does not support the audio element.
-        </audio>
-        <div> सदर :-</div><br>
-        <audio controls>
-           
-        <source src="audio/sadar.mp3" type="audio/mpeg">
-         </audio>
-         <div>घोड्यांच्य पागा :-</div><br>
-         <audio controls>
-           
-        <source src="audio/ghodyanchyapaga.mp3" type="audio/mpeg">
-         </audio>
-    </div>
-
-    <div class="image-gallery">
-        <img src="images/kabar.jpg" alt="Fort View 1">
-        <img src="images/sadar.png" alt="Fort View 2">
-        <img src="images/godyanchipaga.png" alt="Fort View 2">
-    </div>
-
-    <div class="timeline">
-        <div>
-            कबर :- ही कबर औरंगजेबाच्या मुलीची आसावी अशी इतिहासात नोंद आढळते. तिच्या स्मरणार्थ ही कबर बांधली आसावी. तिच्या नावाचा उल्लेख इतिहासात आढळला नाही.                           </div>
-        <div>
-            सदर :- शेजारील वास्तू ही शिवकालीन सदरेचे भग्नावशेष आहेत. या सदरेचा उपयोग शिवकाळामध्ये न्यायनिवाडा करण्यासाठी केला जात असे. 
-            परंतु परकीय आक्रमणांमुळे सद्यस्थितीत या सदरेचे भग्नावशेष आढळतात. 
-
+          <div class="audio-card">
+            <h3>घोड्यांच्य पागा</h3>
+            <audio controls>
+              <source src="audio/ghodyanchyapaga.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
         </div>
-        
-        <div>
-            घोड्यांच्य पागा :-
-            ही लोहगडावरील एक नैसर्गिक गुहा आहे. येथे घोड्याच्या निवासाची व्यवस्था केली आहे. घोड्यांच्या चाऱ्यासाठी खड्डे केलेले दिसून येतात. 
-             यामध्येच घोड्यांच्या पाणी पिण्याची व्यवस्था देखील केली आहे.
-              तसेच आतील बाजुस असलेल्या खोलीचा वापर घोड्यांचे अन्न  साठवुन ठेवण्यासाठी  केला जात असावा असा अंदाज आहे.
-            
-            
-        </div>
-        <div>
-            वाड्याची जागा :- येथेच सदरेच्या बाजूला महल आसावा असे वास्तुरचणे वरुण समजते. तिथे पाण्याचे उत्तम नियोजन केलेले आढळते. 
-        </div>
-    </div>
 
-</section>
+        <!-- Images -->
+        <div class="gallery-grid" style="margin-bottom: 50px">
+          <img src="images/kabar.jpg" alt="कबर" />
+          <img src="images/sadar.png" alt="सदर" />
+          <img src="images/godyanchipaga.png" alt="घोड्यांची पागा" />
+        </div>
 
-</body>
+        <!-- Content Timeline -->
+        <div class="timeline">
+          <p>
+            <strong>कबर :-</strong>
+            ही कबर औरंगजेबाच्या मुलीची आसावी अशी इतिहासात नोंद आढळते. तिच्या
+            स्मरणार्थ ही कबर बांधली आसावी. तिच्या नावाचा उल्लेख इतिहासात आढळला
+            नाही.
+          </p>
+
+          <p>
+            <strong>सदर :-</strong>
+            शेजारील वास्तू ही शिवकालीन सदरेचे भग्नावशेष आहेत. या सदरेचा उपयोग
+            शिवकाळामध्ये न्यायनिवाडा करण्यासाठी केला जात असे. परंतु परकीय
+            आक्रमणांमुळे सद्यस्थितीत या सदरेचे भग्नावशेष आढळतात.
+          </p>
+
+          <p>
+            <strong>घोड्यांच्य पागा :-</strong>
+            ही लोहगडावरील एक नैसर्गिक गुहा आहे. येथे घोड्याच्या निवासाची
+            व्यवस्था केली आहे. घोड्यांच्या चाऱ्यासाठी खड्डे केलेले दिसून येतात.
+            यामध्येच घोड्यांच्या पाणी पिण्याची व्यवस्था देखील केली आहे. तसेच
+            आतील बाजुस असलेल्या खोलीचा वापर घोड्यांचे अन्न साठवुन ठेवण्यासाठी
+            केला जात असावा असा अंदाज आहे.
+          </p>
+
+          <p>
+            <strong>वाड्याची जागा :-</strong>
+            येथेच सदरेच्या बाजूला महल आसावा असे वास्तुरचणे वरुण समजते. तिथे
+            पाण्याचे उत्तम नियोजन केलेले आढळते.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 शिलेदार | लोहगड किल्ला</p>
+    </footer>
+  </body>
 </html>
